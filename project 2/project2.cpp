@@ -27,7 +27,7 @@ int main() {
     // Calculate age
     int age = currentYear - birthYear;
     if (currentMonth < birthMonth || (currentMonth == birthMonth && currentDay < birthDay)) {
-        age--; // هنوز تولد نشده است
+        age--; 
     }
 
     // Calculate time passed since birth
@@ -40,12 +40,12 @@ int main() {
 
     if (passedDays < 0) {
         passedMonths--;
-        passedDays += 30; // تقریبی برای ماه 30 روزه
+        passedDays += 30; //calender for 30 days
     }
 
     if (passedMonths < 0) {
         passedYears--;
-        passedMonths += 12; // 12 ماه در سال
+        passedMonths += 12; //12 month
     }
 
     cout << "Your age is: " << age << " years old." << endl;
